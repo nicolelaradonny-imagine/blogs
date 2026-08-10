@@ -5,7 +5,7 @@ pubDate: 'Aug 07 2026'
 heroImage: '../../assets/woman_walking.jpg'
 ---
 
-Okay you might be wondering: Why did I suddenly become an ambassador of silent walking? Who am I to tell people to go on silent walks? And remove the pleasure of music or knowledge of podcasts?
+Okay you might be wondering: Why did I suddenly become an ambassador of silent walking? Who am I to tell people to go on silent walks? And remove the pleasure of music or knowledge of podcasts? 
 
 Frankly, I'm the last qualified person to be writing this, but it did change my life, so i’m just sharing my thoughts. My life is a whole lot calmer, I feel much happier, and I'm really (hear me out) addicted to it actually. So without further adieu, here are five reasons why I think everyone on this beautiful green spinning planet needs to go walking without listening to anything (apart from nature).
 
