@@ -73,7 +73,8 @@ a:hover {
 }
 p {
 	margin-bottom: 1em;
-	text-align: justify;
+	text-align: left;
+	text-indent: 2em;
 }
 .prose p {
 	margin-bottom: 2em;
@@ -140,4 +141,8 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+h1 {
+    	font-size: 3rem; /* The default is usually around 2rem. Change this number until it looks right to you! */
 }
