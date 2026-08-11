@@ -13,68 +13,251 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h2>Hello, Nice to meet you!</h2>
-			<p>
-				Welcome to the official website for Nicole Donny's blog
-			</p>
+			
+			<!-- Hero Section with Image -->
+			<section class="hero-section">
+				<div class="hero-text">
+					<h2>Hello, nice to meet you!</h2>
+					<p>Welcome to the official website for <strong>Nicole Donny's blog</strong>.</p>
+					
+					<blockquote class="quote">
+						"I want an extraordinary life, so I will do <span class="pink-accent">extraordinary things</span>."
+					</blockquote>
+				</div>
+				<!-- Drop your image in the public folder and name it profile.jpg -->
+				<img src="/assets/nicole pic.jpeg" alt="Nicole Donny" class="profile-image" />
+			</section>
 
-			<h3>I want an extraordinary life, so I will do extraordinary things.</h3>
-			<p>
-				I'm a computer engineering graduate from a small town in Borneo, Malaysia, with a passion for 					creating and a lifelong dream of becoming a pilot.
+			<!-- Intro Section -->
+			<section class="intro-section">
+				<p>
+					I'm a computer engineering graduate from a small town in Borneo, Malaysia, with a passion for <em>creating</em> and a lifelong dream of becoming a <strong>pilot</strong>.
+				</p>
+				<p>
+					This is my little corner of the internet—a place where I share the things I'm learning, the experiences that shape me, and the ideas that make me stop and think. I write about self-development, technology, aviation, books, fitness, and the messy process of figuring life out. 
+				</p>
+				<p>
+					Sometimes I'll share something I've learned. Sometimes I'll share something I'm still trying to understand. And sometimes, I'll simply tell you about something I enjoyed. I don't expect everyone to agree with me. In fact, I welcome disagreement. If something I write makes you see a familiar idea from a different perspective, then I think the conversation is worth having.
+				</p>
+			</section>
 
-				This is my little corner of the internet—a place where I share the things I'm learning, the experiences 				that shape me, and the ideas that make me stop and think.
+			<hr class="divider" />
 
-				I write about self-development, technology, aviation, books, fitness, and the messy process of figuring 				life out. Sometimes I'll share something I've learned. Sometimes I'll share something I'm still trying to 				understand. And sometimes, I'll simply tell you about something I enjoyed.
-
-				I don't expect everyone to agree with me. In fact, I welcome disagreement. If something I write makes 				you see a familiar idea from a different perspective, then I think the conversation is worth having.
-			</p>
-
-			<h4>What I'm working toward</h4>
+			<!-- Goals Section -->
+			<h4 class="section-title">What I'm working toward</h4>
 			<p>Right now, I'm working toward three big things:</p>
-			<ul>
-				<li>✈️ Becoming a pilot — working toward my ATPL and turning a lifelong dream into a reality.</li>
-				<li>💻 Building and creating — growing my technical skills and building a digital portfolio that reflects what I can do.</li>
-				<li>🏋️ Building a fitness business — turning my passion for fitness into something that can help other people, especially beginners.</li>
+			<ul class="goals-list">
+				<li><strong>✈️ Becoming a pilot</strong> — working toward my ATPL and turning a lifelong dream into a reality.</li>
+				<li><strong>💻 Building and creating</strong> — growing my technical skills and building a digital portfolio that reflects what I can do.</li>
+				<li><strong>🏋️ Building a fitness business</strong> — turning my passion for fitness into something that can help other people, especially beginners.</li>
 			</ul>
 			<p>
-				And underneath all of that is something simpler: becoming a better version of myself.
-
-				I've had my share of imposter syndrome, especially as a woman in a field where I haven't always felt 				like I belonged. For a long time, it was easy to wonder whether I was good enough to stand beside my 				male peers.
-
-				I'm learning to believe that I belong there—not behind them, but alongside them.
+				And underneath all of that is something simpler: <em>becoming a better version of myself</em>.
 			</p>
-
-			<h4>What you'll find here</h4>
-			<h3>📖 Books & Insights</h3>
-			<p>My thoughts, reflections, and lessons from the stories I read—especially the ones 				that stay with me long after I close the book.</p>
-
-			<h3>🌱 Habits & Self-Development</h3>
-			<p>Things I'm trying, learning, and questioning as I figure out how to build a better 				life.</p>
-
-			<h3>💻 What I'm Learning</h3>
-			<p>Technical things I've learned through engineering, projects, and building things 				myself.</p>
-
-			<h3>✈️ Aviation</h3>
-			<p>My journey toward becoming a pilot, from the things I'm learning now to the 					experiences that come late.</p>
-
-			<h4>What i believe</h4>
 			<p>
-				I believe a good life is built by being kind to others and continuing to learn.
-
-				I value consistency, kindness, and the audacity to dream—especially when the 					dream seems a little too big.
-
-				I'm not here because I've figured everything out.
-
-				I'm here because I'm figuring it out in public.
-
-				If you have a minute to spare, welcome. I hope something you find here makes 					you think, inspires you, or simply gives you a different way of looking at 						something.
-
-				And if you disagree with me?
-
-				Even better. Let's talk.
+				I've had my share of <span class="pink-accent">imposter syndrome</span>, especially as a woman in a field where I haven't always felt like I belonged. For a long time, it was easy to wonder whether I was good enough to stand beside my male peers.
 			</p>
+			<p>
+				I'm learning to believe that I belong there—<strong>not behind them, but alongside them.</strong>
+			</p>
+
+			<hr class="divider" />
+
+			<!-- Categories Grid -->
+			<h4 class="section-title">What you'll find here</h4>
+			<div class="category-grid">
+				<div class="category-card">
+					<h3>📖 Books & Insights</h3>
+					<p>My thoughts, reflections, and lessons from the stories I read—especially the ones that stay with me long after I close the book.</p>
+				</div>
+				<div class="category-card">
+					<h3>🌱 Self-Development</h3>
+					<p>Things I'm trying, learning, and questioning as I figure out how to build a better life.</p>
+				</div>
+				<div class="category-card">
+					<h3>💻 What I'm Learning</h3>
+					<p>Technical things I've learned through engineering, projects, and building things myself.</p>
+				</div>
+				<div class="category-card">
+					<h3>✈️ Aviation</h3>
+					<p>My journey toward becoming a pilot, from the things I'm learning now to the experiences that come later.</p>
+				</div>
+			</div>
+
+			<hr class="divider" />
+
+			<!-- Closing Section -->
+			<section class="closing-section">
+				<h4 class="section-title">What I believe</h4>
+				<p>
+					I believe a good life is built by being kind to others and continuing to learn. I value consistency, kindness, and the audacity to dream—<span class="pink-accent">especially when the dream seems a little too big.</span>
+				</p>
+				<p>
+					I'm not here because I've figured everything out. I'm here because I'm <strong><em>figuring it out in public</em></strong>.
+				</p>
+				<p>
+					If you have a minute to spare, welcome. I hope something you find here makes you think, inspires you, or simply gives you a different way of looking at something.
+				</p>
+				<p class="final-callout">
+					And if you disagree with me? <br />
+					<span class="pink-accent">Even better. Let's talk.</span>
+				</p>
+			</section>
 
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	/* Global main spacing */
+	main {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+		line-height: 1.8;
+	}
+
+	/* Pink Accent Color */
+	.pink-accent {
+		color: #d81b60;
+		font-weight: 600;
+	}
+
+	/* Hero Section */
+	.hero-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.hero-text {
+		flex: 1;
+	}
+
+	.hero-text h2 {
+		margin-top: 0;
+		font-size: 2.5rem;
+		letter-spacing: -0.5px;
+	}
+
+	.profile-image {
+		width: 220px;
+		height: 220px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 4px solid #d81b60;
+		box-shadow: 0 10px 25px rgba(216, 27, 96, 0.15);
+	}
+
+	.quote {
+		font-size: 1.25rem;
+		font-style: italic;
+		border-left: 4px solid #d81b60;
+		padding-left: 1.2rem;
+		margin: 1.5rem 0;
+		color: #4a5568; /* Adjust to a lighter gray if your blog is dark mode */
+	}
+
+	/* Typography & Structure */
+	.section-title {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #d81b60;
+		font-size: 1rem;
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+
+	.divider {
+		border: 0;
+		height: 1px;
+		background: #e2e8f0;
+		margin: 3rem 0;
+	}
+
+	/* Goals List */
+	.goals-list {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 2rem;
+	}
+
+	.goals-list li {
+		margin-bottom: 1rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.goals-list li::before {
+		content: "•";
+		color: #d81b60;
+		font-size: 1.5rem;
+		position: absolute;
+		left: 0;
+		top: -4px;
+	}
+
+	/* Category Grid */
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.category-card {
+		background: rgba(216, 27, 96, 0.03);
+		padding: 1.5rem;
+		border-radius: 8px;
+		border-top: 3px solid #d81b60;
+		transition: transform 0.2s ease;
+	}
+
+	.category-card:hover {
+		transform: translateY(-3px);
+	}
+
+	.category-card h3 {
+		margin-top: 0;
+		font-size: 1.2rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.category-card p {
+		margin-bottom: 0;
+		font-size: 0.95rem;
+	}
+
+	/* Closing Section */
+	.closing-section {
+		text-align: center;
+	}
+
+	.closing-section .section-title {
+		margin-top: 0;
+	}
+
+	.final-callout {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-top: 2rem;
+	}
+
+	/* Mobile Responsiveness */
+	@media (max-width: 768px) {
+		.hero-section {
+			flex-direction: column-reverse;
+			text-align: center;
+		}
+		
+		.quote {
+			text-align: left;
+		}
+	}
+</style>
