@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import profilePic from '../assets/nicole pic.jpeg';
 ---
 
 <!doctype html>
@@ -24,8 +26,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 						"I want an extraordinary life, so I will do <span class="pink-accent">extraordinary things</span>."
 					</blockquote>
 				</div>
-				<!-- Drop your image in the public folder and name it profile.jpg -->
-				<img src="/assets/nicole pic.jpeg" alt="Nicole Donny" class="profile-image" />
+					<Image src={profilePic} alt="Nicole Donny" class="profile-image" />
 			</section>
 
 			<!-- Intro Section -->
