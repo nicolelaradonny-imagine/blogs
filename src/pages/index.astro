@@ -145,8 +145,10 @@ import profilePic from '../assets/nicole pic.jpeg';
 	}
 
 	.profile-image {
-		width: 220px;
-		height: 220px;
+		max-width: 220px;
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		height: auto;
 		border-radius: 50%;
 		object-fit: cover;
 		border: 4px solid #d81b60;
@@ -208,7 +210,7 @@ import profilePic from '../assets/nicole pic.jpeg';
 	/* Category Grid */
 	.category-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 		gap: 1.5rem;
 	}
 
@@ -259,6 +261,10 @@ import profilePic from '../assets/nicole pic.jpeg';
 		
 		.quote {
 			text-align: left;
+		}
+
+		.category-grid {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
