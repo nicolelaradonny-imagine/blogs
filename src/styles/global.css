@@ -1,5 +1,30 @@
-* {
-    outline: 1px solid red !important;
+/* Reset body and html margins */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* This is safe now because we are fixing the width */
+}
+
+/* Force all major sections to respect the screen size */
+header, main, footer {
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+}
+
+/* Override Astro's default main margin that causes mobile scrolling */
+main {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Keep images responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 :root {
