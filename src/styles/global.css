@@ -1,41 +1,5 @@
-/* Smart Responsive Reset */
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    /* We removed overflow-x: hidden so your content stops getting cut off! */
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    /* This prevents flexbox elements from refusing to shrink */
-    min-width: 0; 
-}
-
-/* 1. Force long words and URLs to drop to the next line instead of pushing the screen wide */
-p, a, h1, h2, h3, h4, h5, h6, li, blockquote {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-}
-
-/* 2. Fix the default Astro Navigation Bar on mobile */
-/* This forces your header links to stack neatly instead of fighting for space */
-@media (max-width: 768px) {
-    header nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        text-align: center;
-    }
-    
-    .internal-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+* {
+    outline: 1px solid red !important;
 }
 
 :root {
