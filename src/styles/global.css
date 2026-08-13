@@ -1,3 +1,50 @@
+/* Global Dark Theme Variables */
+:root {
+    --bg-dark: #0f172a;       /* Deep slate background */
+    --bg-card: #1e293b;       /* Card background */
+    --text-main: #f8fafc;     /* Crisp white text */
+    --text-muted: #94a3b8;    /* Muted gray text */
+    --accent-pink: #d81b60;   /* Strong pink accent */
+}
+
+/* Apply Theme to the Whole Website */
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+}
+
+/* Ensure Headings and Links match the vibe */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-main) !important;
+}
+
+p, li, time {
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--accent-pink);
+}
+
+a:hover {
+    color: #ad144b;
+}
+
+/* Style Astro's default header and footer to match the dark theme */
+header {
+    background-color: var(--bg-dark) !important;
+    border-bottom: 1px solid #334155;
+}
+
+header h2 a {
+    color: var(--text-main) !important;
+}
+
+footer {
+    color: var(--text-muted) !important;
+    border-top: 1px solid #334155;
+}
+
 /* Reset body and html margins */
 html, body {
     margin: 0;

@@ -1,63 +1,265 @@
 ---
-import AboutHeroImage from '../assets/nicole pic.jpeg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import profilePic from '../assets/nicole pic.jpeg';
 ---
 
-<Layout
-	title="About Me"
-	description="A short summary of the author"
-	pubDate={new Date('August 10 2026')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			
+			<!-- Hero Section with Image -->
+			<section class="hero-section">
+				<div class="hero-text">
+					<h2>Hello, nice to meet you!</h2>
+					<p>Welcome to the official website for <strong>Nicole Donny's blog</strong>.</p>
+					
+					<blockquote class="quote">
+						"I want an extraordinary life, so I will do <span class="pink-accent">extraordinary things</span>."
+					</blockquote>
+				</div>
+					<Image src={profilePic} alt="Nicole Donny" class="profile-image" />
+			</section>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+			<!-- Intro Section -->
+			<section class="intro-section">
+				<p>
+					I'm a computer engineering graduate from a small town in Borneo, Malaysia, with a passion for <em>creating</em> and a lifelong dream of becoming a <strong>pilot</strong>.
+				</p>
+				<p>
+					This is my little corner of the internet. A place where I share the things I'm learning, the experiences that shape me, and the ideas that make me stop and think. I write about self-development, technology, aviation, books, fitness, and the messy process of figuring life out. 
+				</p>
+			</section>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+			<hr class="divider" />
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+			<!-- Goals Section -->
+			<h4 class="section-title">What I'm working toward</h4>
+			<p>Right now, I'm working toward three big things:</p>
+			<ul class="goals-list">
+				<li><strong>✈️ Becoming a pilot</strong> — working toward my ATPL and turning a lifelong dream into a reality.</li>
+				<li><strong>💻 Building and creating</strong> — growing my technical skills and building a digital portfolio that reflects what I can do.</li>
+				<li><strong>🏋️ Building a fitness business</strong> — turning my passion for fitness into something that can help other people, especially beginners.</li>
+			</ul>
+			<p>
+				And underneath all of that is something simpler: <em>becoming a better version of myself</em>.
+			</p>
+			<p>
+				I've had my share of <span class="pink-accent">imposter syndrome</span>, especially as a woman in a field where I haven't always felt like I belonged. For a long time, it was easy to wonder whether I was good enough to stand beside my male peers.
+			</p>
+			<p>
+				I'm learning to believe that I belong there—<strong>not behind them, but alongside them.</strong>
+			</p>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+			<hr class="divider" />
+
+			<!-- Categories Grid -->
+			<h4 class="section-title">What you'll find here</h4>
+			<div class="category-grid">
+				<div class="category-card">
+					<h3>📖 Books & Insights</h3>
+					<p>My thoughts, reflections, and lessons from the stories I read—especially the ones that stay with me long after I close the book.</p>
+				</div>
+				<div class="category-card">
+					<h3>🌱 Self-Development</h3>
+					<p>Things I'm trying, learning, and questioning as I figure out how to build a better life.</p>
+				</div>
+				<div class="category-card">
+					<h3>💻 What I'm Learning</h3>
+					<p>Technical things I've learned through engineering, projects, and building things myself.</p>
+				</div>
+				<div class="category-card">
+					<h3>✈️ Aviation</h3>
+					<p>My journey toward becoming a pilot, from the things I'm learning now to the experiences that come later.</p>
+				</div>
+			</div>
+
+			<hr class="divider" />
+
+			<!-- Closing Section -->
+			<section class="closing-section">
+				<h4 class="section-title">What I believe</h4>
+				<p>
+					I believe a good life is built by being kind to others and continuing to learn. I value consistency, kindness, and the audacity to dream—<span class="pink-accent">especially when the dream seems a little too big.</span>
+				</p>
+
+				<p>
+					If you have a minute to spare, welcome. I hope something you find here makes you think, or simply inspires you.
+				</p>
+				<p class="final-callout">
+					And if you disagree with me? <br />
+					<span class="pink-accent">Even better. Let's talk.</span>
+				</p>
+			</section>
+
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	/* Global main spacing */
+	main {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+		line-height: 1.8;
+	}
+
+	/* Pink Accent Color */
+	.pink-accent {
+		color: #d81b60;
+		font-weight: 600;
+	}
+
+	/* Hero Section */
+	.hero-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.hero-text {
+		flex: 1;
+	}
+
+	.hero-text h2 {
+		margin-top: 0;
+		font-size: 2.5rem;
+		letter-spacing: -0.5px;
+	}
+
+	.profile-image {
+		max-width: 220px;
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		height: auto;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 4px solid #d81b60;
+		box-shadow: 0 10px 25px rgba(216, 27, 96, 0.15);
+	}
+
+	.quote {
+		font-size: 1.25rem;
+		font-style: italic;
+		border-left: 4px solid #d81b60;
+		padding-left: 1.2rem;
+		margin: 1.5rem 0;
+		color: #4a5568; /* Adjust to a lighter gray if your blog is dark mode */
+	}
+
+	/* Typography & Structure */
+	.section-title {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #d81b60;
+		font-size: 1rem;
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+
+	.divider {
+		border: 0;
+		height: 1px;
+		background: #e2e8f0;
+		margin: 3rem 0;
+	}
+
+	/* Goals List */
+	.goals-list {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 2rem;
+	}
+
+	.goals-list li {
+		margin-bottom: 1rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.goals-list li::before {
+		content: "•";
+		color: #d81b60;
+		font-size: 1.5rem;
+		position: absolute;
+		left: 0;
+		top: -4px;
+	}
+
+	/* Category Grid */
+	.category-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.category-card {
+		background: rgba(216, 27, 96, 0.03);
+		padding: 1.5rem;
+		border-radius: 8px;
+		border-top: 3px solid #d81b60;
+		transition: transform 0.2s ease;
+	}
+
+	.category-card:hover {
+		transform: translateY(-3px);
+	}
+
+	.category-card h3 {
+		margin-top: 0;
+		font-size: 1.2rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.category-card p {
+		margin-bottom: 0;
+		font-size: 0.95rem;
+	}
+
+	/* Closing Section */
+	.closing-section {
+		text-align: center;
+	}
+
+	.closing-section .section-title {
+		margin-top: 0;
+	}
+
+	.final-callout {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-top: 2rem;
+	}
+
+	/* Mobile Responsiveness */
+	@media (max-width: 768px) {
+		.hero-section {
+			flex-direction: column-reverse;
+			text-align: center;
+		}
+		
+		.quote {
+			text-align: left;
+		}
+
+		.category-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
