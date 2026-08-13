@@ -216,3 +216,18 @@ hr {
 h1 {
     	font-size: 3rem; /* The default is usually around 2rem. Change this number until it looks right to you! */
 }
+
+/* --- STRICT DARK THEME OVERRIDES --- */
+body, main {
+    background: #0f172a !important; 
+    background-color: #0f172a !important;
+}
+
+/* Force footer text to be readable */
+footer, footer * {
+    color: #94a3b8 !important;
+}
+
+footer a:hover {
+    color: #d81b60 !important;
+}
