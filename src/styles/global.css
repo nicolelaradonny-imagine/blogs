@@ -223,11 +223,20 @@ body, main {
     background-color: #0f172a !important;
 }
 
-/* Force footer text to be readable */
-footer, footer * {
+/* Force the footer to match the dark theme and shrink its height */
+footer {
+    background: #0f172a !important; /* Nukes the default grey gradient */
+    padding: 2rem 1rem !important;  /* Shrinks the massive default height */
+    color: #f8fafc !important;      /* Changes the copyright text to crisp white */
+    border-top: 1px solid #334155 !important; /* Adds a clean separator line */
+    text-align: center;
+}
+
+/* Ensure any links or icons inside the footer are also visible */
+footer * {
     color: #94a3b8 !important;
 }
 
-footer a:hover {
-    color: #d81b60 !important;
+footer a:hover, footer svg:hover {
+    color: #d81b60 !important; /* Pink hover effect for social icons */
 }
